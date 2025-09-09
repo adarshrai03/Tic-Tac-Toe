@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Container */
+.container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Game Board */
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5vmin;
+  margin-bottom: 2rem;
+  perspective: 1000px;
+}
+
+/* Each Box */
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  font-size: 8vmin;
+  font-weight: bold;
+  color: #ffdd59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover {
+  transform: scale(1.05) rotate3d(1, 1, 0, 10deg);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+#reset-btn,
+#newGame-btn {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#reset-btn:hover,
+#newGame-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #dd2476, #ff512f);
+}
+
+/* Message Container */
+.messageContainer {
+  height: auto; /* flexible height */
+  min-height: 8vmin; /* keeps space reserved so board won't shift */
+  display: flex;
+  flex-direction: column; /* stack message & button */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem; /* space between message and button */
+}
+
+#message {
+  font-size: 5vmin;
+  font-weight: bold;
+  color: #ffd32a;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  animation: pulse 1.5s infinite;
+  text-align: center;
+}
+
+/* Reset Button in Center */
+#reset-btn {
+  display: block;
+  margin: 1rem auto; /* center horizontally */
+}
+
+/* Extra Styling */
+.upper {
+  margin-bottom: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
