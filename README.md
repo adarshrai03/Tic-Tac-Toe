@@ -216,8 +216,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Adarsh Rai**
 
 - GitHub: [@adarshrai03](https://github.com/adarshrai03)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- Portfolio: [Your Portfolio Website](https://yourportfolio.com)
 
 ## 🙏 Acknowledgments
 
