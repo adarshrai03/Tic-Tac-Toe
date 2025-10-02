@@ -227,20 +227,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-### 💬 Interview Talking Points
-
-**When discussing this project:**
-
-1. **Technical Decision**: "I chose vanilla JavaScript over frameworks to demonstrate strong fundamentals in core web technologies and efficient DOM manipulation without dependencies."
-
-2. **Algorithm Efficiency**: "The win-checking algorithm runs in O(1) time complexity as it only checks 8 predefined patterns, making it highly efficient."
-
-3. **UX Focus**: "I implemented disabled states for clicked boxes and visual feedback through animations to enhance user experience and prevent invalid moves."
-
-4. **Modern CSS**: "I utilized CSS Grid for the game board layout and modern techniques like backdrop-filter for glassmorphism, showing my awareness of contemporary design trends."
-
-5. **Scalability**: "The code structure is modular with separate functions for game logic, UI updates, and state management, making it easy to extend with features like AI or multiplayer."
-
----
-
 ⭐ **If you found this project interesting, please give it a star!** ⭐
